@@ -1,1 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Research by Zachariah Emmanuel, Ph.D. candidate in Economics at Georgia State University.">
+
+    <title>Research | Zachariah Emmanuel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+
+        const isOpen = navLinks.classList.contains("active");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    /* Close menu after selecting a link */
+    navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+        });
+    });
+</script>
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header class="site-header">
+
+  <div class="container nav-wrap">
+
+    <a class="site-title" href="index.html">
+      Zachariah Emmanuel
+    </a>
+
+    <!-- Mobile hamburger button -->
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="main-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Main navigation -->
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle light and dark theme"
+        title="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+    </nav>
+
+  </div>
+
+</header>
+<!-- =========================================
+     MAIN PAGE
+========================================= -->
+
+<main>
+
+    <div class="container page-layout">
+
+
+        <!-- =====================================
+             PROFILE SIDEBAR
+        ====================================== -->
+
+        <aside class="profile-sidebar">
+
+            <img
+                src="assets/Zachariah-Profile-picture_.jpg"
+                alt="Zachariah Emmanuel"
+                class="profile-photo"
+            >
+
+
+            <h2 class="profile-name">
+                Zachariah Emmanuel
+            </h2>
+
+
+            <div class="profile-details">
+
+                <span>
+                    Economics Ph.D. Candidate<br>
+                    Andrew Young School of Policy Studies<br>
+                    Georgia State University 
+                </span>
+
+                <span>
+                    E-mail:
+
+                    <a href="mailto:zemmanuel2@gsu.edu">
+                        zemmanuel2@gsu.edu
+                    </a>
+                </span>
+
+            </div>
+
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="social-links">
+
+                <a href="https://scholar.google.com/citations?user=WSJ-WQcAAAAJ"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Google Scholar"
+                   title="Google Scholar">
+
+                    <i class="fa-brands fa-google-scholar"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/zachariah-emmanuel-82096583/"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="LinkedIn"
+                   title="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+
+                <a href="https://github.com/zachariahemmanuel2/"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="GitHub"
+                   title="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="https://orcid.org/0000-0001-9636-632X"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="ORCID"
+                   title="ORCID">
+
+                    <i class="fa-brands fa-orcid"></i>
+
+                </a>
+
+
+                <a href="https://www.researchgate.net/profile/Zachariah-Emmanuel"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="ResearchGate"
+                   title="ResearchGate">
+
+                    <i class="fa-brands fa-researchgate"></i>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+             RESEARCH CONTENT
+        ====================================== -->
+
+        <section class="page-content research-page">
+
+
+            <!-- =================================
+                 JOB MARKET PAPER
+            ================================== -->
+
+            <section class="research-section">
+
+                <h1 class="research-section-title">
+                    Job Market Paper
+                </h1>
+
+                <hr class="research-divider">
+
+
+                <article class="paper">
+
+                    <h2 class="paper-title">
+
+                        Exploring the Differential Impact of Repealing the ACA
+                        Individual Mandate by Health Status
+
+                    </h2>
+
+                    <details class="abstract-toggle">
+  <summary>Abstract</summary>
+  <div class="abstract-text">
+     This paper examines how the 2019 elimination of the Affordable Care Act (ACA)
+                        individual mandate penalty affected insurance outcomes by health status.
+                        Using nationally representative CPS ASEC data, I exploit cross-state 
+                        variation in mandate enforcement by comparing states without enforceable
+                        mandates with Massachusetts, New Jersey, and the District of Columbia, 
+                        which had enforceable mandates in 2019. The policy increased the probability 
+                        of becoming newly uninsured, with a statistically significant increase among 
+                        relatively healthy consumers but not among relatively sick consumers. 
+                        The benchmark Marketplace premium for a 27-year-old increased by $739, 
+                        while reported out-of-pocket premium spending declined by $284.60. 
+                        Financial-incidence analysis suggests that accounting for ACA subsidies attenuates
+                        the financial burden that would otherwise fall more heavily on relatively sick consumers. 
+                        The findings show that the incidence of adverse selection depends not only on Marketplace 
+                        premiums but also on how public subsidies shape consumers’ exposure to premium increases.
+  </div>
+</details>
+                    
+                    <div class="paper-links">
+
+                        <a  href="papers/job-market-paper.pdf"
+                           target="_blank"
+                           rel="noopener">
+
+                            Paper
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =================================
+                 WORKING PAPER
+            ================================== -->
+
+            <section class="research-section">
+
+                <h1 class="research-section-title">
+                    Working Papers
+                </h1>
+
+                <hr class="research-divider">
+
+
+                <article class="paper">
+
+                    <h2 class="paper-title">
+
+                        Does the Tobacco 21 Minimum Legal Sales Age Policy Improve
+                        Respiratory Health? Evidence from the United States
+
+                    </h2>
+
+
+                    <p class="paper-meta">
+                        With M.O. Emmanuel, G. Aipoh, V.J. Dickson, and E.N. Collins
+                    </p>
+
+
+                    <p class="paper-meta">
+
+                        Revise and Resubmit,
+                        <em>Social Science &amp; Medicine</em>
+
+                    </p>
+
+                                        <details class="abstract-toggle">
+  <summary>Abstract</summary>
+  <div class="abstract-text">
+Tobacco use is a leading contributor to preventable respiratory morbidity, yet empirical evaluations
+of tobacco-control policies have largely focused on behavioral responses rather than health outcomes.
+We examine whether Tobacco-21 minimum legal sales age (MLSA) laws affect smoking and asthma
+prevalence among young adults aged 18–20. Using Behavioral Risk Factor Surveillance System data
+from 2011–2019, we exploit the staggered adoption of Tobacco-21 laws across U.S. states using the
+Callaway and Sant’Anna (2021) difference-in-differences estimator, which accommodates heterogeneous
+treatment timing. We find that smoking estimates are consistently negative, ranging from approximately 2 to 4
+percentage points, although statistical significance varies across specifications. In contrast, we find no
+statistically detectable short-run effect on asthma prevalence. The asthma estimates are imprecise and do
+not rule out economically meaningful effects in either direction. These findings highlight the importance
+of distinguishing immediate behavioral responses from health outcomes that may require longer follow-up
+periods to detect.
+  </div>
+</details>
+          
+
+                    <div class="paper-links">
+
+                        <a href="papers/tobacco-paper.pdf"
+                           target="_blank"
+                           rel="noopener">
+
+                            Paper
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =================================
+                 WORKS IN PROGRESS
+            ================================== -->
+
+            <section class="research-section">
+    <h1>Works in Progress</h1>
+    <hr>
+
+    <ol class="works-progress">
+        <li>
+            Beyond the Beneficiary: Spousal Spillover Effects of Medicare Part D 
+            Among SSDI Medicare Beneficiaries.
+        </li>
+
+        <li>
+            The Impact of Non-Financial Incentives on Infant and Maternal Health: 
+            Evidence from Nigeria’s Abiye (Safe Motherhood) Program
+        </li>
+
+          <li>
+            Individual Mandate Policy and Preventive Care (with S. Olanrewaju, S. Mukherjee, J. Josephs, Y. M. Fomene, M. Agbede). 
+        </li>
+    </ol>
+</section>
+
+
+            <!-- =================================
+                 PRE-DOCTORAL PUBLICATIONS
+            ================================== -->
+
+            <section class="research-section">
+
+                <h1 class="research-section-title">
+                    Publications
+                </h1>
+
+                <hr class="research-divider">
+
+
+
+                <!-- PUBLICATION 1 -->
+
+                <article class="paper">
+
+                    <h2 class="paper-title">
+
+                        The Determinants of Micro, Small and Medium Enterprises'
+                        (MSMEs) Performance in Nigeria: Evidence from Business Enterprise Survey
+
+                    </h2>
+
+
+                    <p class="paper-meta">
+                        With Rosemary A. Anga and Charity G. Isa
+                    </p>
+
+
+                    <p>
+
+                        <em>
+                            Development Bank of Nigeria Journal of Economics
+                            and Sustainable Growth
+                        </em>,
+                        3(1), 21–45, 2020.
+
+                    </p>
+
+
+                    <div class="paper-links">
+
+                        <a href="papers/msme-paper.pdf"
+                           target="_blank"
+                           rel="noopener">
+
+                            Published Article
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PUBLICATION 2 -->
+
+                <article class="paper">
+
+                    <h2 class="paper-title">
+
+                        Public Debt Sustainability in Nigeria after the Exit from
+                        Paris Club: The Role of Structural Breaks
+
+                    </h2>
+
+
+                    <p class="paper-meta">
+                        With Adewumi Otonne and Jane O. Asogwa
+                    </p>
+
+
+                    <p>
+
+                        <em>
+                            Acta Universitatis Danubius (Economica) Journal
+                        </em>,
+                        15(7), 148–163, 2019.
+
+                    </p>
+
+
+                    <div class="paper-links">
+
+                        <a href="papers/public-debt-paper.pdf"
+                           target="_blank"
+                           rel="noopener">
+
+                            Published Article
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PUBLICATION 3 -->
+
+                <article class="paper">
+
+                    <h2 class="paper-title">
+
+                        Predicting Exchange Rate with Commodity Prices:
+                        New Evidence from Westerlund and Narayan (2015) Estimator
+                        with Structural Breaks and Asymmetries
+
+                    </h2>
+
+
+                    <p class="paper-meta">
+                        With Afees A. Salisu, Wasiu Adekunle, and Wasiu A. Alimi
+                    </p>
+
+
+                    <p>
+
+                        <em>
+                            Resources Policy
+                        </em>,
+                        62(1), 33–56, 2019.
+
+                    </p>
+
+
+                    <div class="paper-links">
+
+                        <a href="papers/exchange-rate-paper.pdf"
+                           target="_blank"
+                           rel="noopener">
+
+                            Published Article
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="container footer-wrap">
+
+        <span>
+            © 2026 Zachariah Emmanuel
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     THEME TOGGLE
+========================================= -->
+
+<script src="theme.js"></script>
+<script src="menu.js"></script>
+
+</body>
+</html>
+
+
+</body>
+
+</html>
